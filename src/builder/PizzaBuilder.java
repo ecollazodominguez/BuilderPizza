@@ -8,6 +8,8 @@ package builder;
 
 public class PizzaBuilder {
 
+    //Añadimos todos los parámetros de la clase Pizza
+    
     private float grHarina;
     private float mlAgua;
     private float grSal;
@@ -21,11 +23,15 @@ public class PizzaBuilder {
         
     }
 
+    //Creamos un constructor con los parámetros obligatorios
+    
     public PizzaBuilder(float grHarina, float mlAgua) {
         this.grHarina = grHarina;
         this.mlAgua = mlAgua;
     }
     
+    
+    //Los sets devuelven un objeto PizzaBuilder
 
     public PizzaBuilder setGrHarina(float grHarina) {
         this.grHarina = grHarina;
@@ -67,6 +73,8 @@ public class PizzaBuilder {
         return this;
     }
 
+    //Creamos el método que devolverá un objeto Pizza con los parámetros que tenga el objeto PizzaBuilder.
+   
     public Pizza createPizza() {
         return new Pizza(grHarina, mlAgua, grSal, mlAceite, grTomate, grQueso, tipoQueso, grPinha);
     }

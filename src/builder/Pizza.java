@@ -19,6 +19,8 @@ public class Pizza {
     private String tipoQueso;
     private float grPinha;
 
+    //Creamos un constructor con todos los parámetros
+    
     public Pizza(float grHarina, float mlAgua, float grSal, float mlAceite, float grTomate, float grQueso, String tipoQueso, float grPinha) {
         this.grHarina = grHarina;
         this.mlAgua = mlAgua;

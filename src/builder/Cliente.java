@@ -15,6 +15,13 @@ public class Cliente {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        /**
+        * Instanciamos un objeto Pizza que creará un objeto PizzaBuilder con distintos parámetros
+        *usamos los métodos para añadirle los parámetros deseados y luego con el método creatPizza
+        *creamos el objeto pizza que luego mostraremos.
+        */
+        
         Pizza miPizzaHawaiana;
         miPizzaHawaiana = new PizzaBuilder(500,350)
                 .setGrPinha(100)
